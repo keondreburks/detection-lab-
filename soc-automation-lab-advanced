@@ -1,0 +1,40 @@
+# SOC Automation Lab (Advanced)
+
+This project demonstrates a full SOC automation pipeline using Wazuh, Shuffle SOAR, TheHive, Cortex, Sysmon, and VirusTotal.
+
+## Lab Architecture
+
+Sysmon → Wazuh → Shuffle → TheHive → Cortex → VirusTotal → Auto Response
+
+## Tools Used
+
+* Wazuh SIEM
+* Shuffle SOAR
+* TheHive
+* Cortex
+* Sysmon
+* VirusTotal API
+* Docker
+* Python automation
+
+## Automation Features
+
+* Detect suspicious process via Sysmon
+* Send alert to Wazuh
+* Shuffle triggers workflow
+* Create case in TheHive
+* Cortex runs analyzer
+* VirusTotal lookup
+* Auto block malicious IP
+
+## How to Run
+
+docker-compose up -d
+
+Configure API keys in config file
+
+Run scripts in /scripts
+
+## Author
+
+SOC Automation Lab Project
